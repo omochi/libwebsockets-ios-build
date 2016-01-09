@@ -99,8 +99,8 @@ class App
 		if ! (openssl_dir + "lib/libssl.a").exist?
 			Dir.chdir(openssl_dir.to_s)
 			puts "build openssl"
-			cmd = ["./build-libssl.sh"].shelljoin
-			exec(cmd)
+			cmd = ["./build-libssl.sh", "--no-spinner"].shelljoin
+			exec(cmd, env: { "ARCHS" => "armv7 arm64 i386 x86_64"})
 		end
 
 		make_output_dir
@@ -160,6 +160,9 @@ class App
 		dir.mkpath
 		Dir.chdir(script_dir.to_s)
 
+		log_file = dir + "build.log"
+		log_file.binwrite("")
+
 		cmd = ["xcodebuild", "-project", "websockets.xcodeproj",
 			"-target", "websockets",
 			"-configuration", configuration,
@@ -167,7 +170,12 @@ class App
 			"-sdk", xcode_sdk_path,
 			"SYMROOT=#{dir.to_s}"
 			].shelljoin
-		exec(cmd)
+		cmd = "#{cmd} >> #{log_file.to_s} 2>&1"
+		puts  "run xcodebuild (#{platform}, #{arch}, #{configuration})"
+		puts  "  log file: #{log_file.to_s}"
+		print "  waiting"
+		pid = exec_bg(cmd)
+		wait_with_dot(Process.detach(pid))
 	end
 	def make_fat_lib(thin_libs, fat_lib)
 		puts "make fat lib: #{fat_lib.basename.to_s}"
@@ -188,14 +196,28 @@ class App
 	def xcode_sdk_path
 		exec_capture(["xcrun", "-sdk", xcode_platform, "--show-sdk-path"].shelljoin).strip
 	end
-	def exec(command)
-		ret = system(command)
+	def exec(command, env: {})
+		ret = system(env, command)
 		if ! ret
 			raise "exec failed: status=#{$?}, command=#{command}"
 		end
 	end
+	def exec_bg(command, env: {})
+		pid = spawn(env, command)
+	end
 	def exec_capture(command)
 		`#{command}`
+	end
+	def wait_with_dot(pth)
+		while pth.alive?
+			sleep 1
+			print "."
+		end
+		print "\n"
+		ret = pth.value
+		if ret != 0
+			raise "exec failed: status=#{ret}"
+		end
 	end
 end
 
