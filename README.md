@@ -14,5 +14,5 @@ It builds libwebsockets.
 
 You can get artifacts in `out/include` and `out/lib`.
 
-
+Please use it with openssl library it built. (`OpenSSL-for-iPhone/include`, `OpenSSL-for-iPhone/lib`)
 
