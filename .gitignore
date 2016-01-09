@@ -1,0 +1,7 @@
+.DS_Store
+xcuserdata
+
+/out/*
+/libwebsockets
+/OpenSSL-for-iPhone
+!.keep

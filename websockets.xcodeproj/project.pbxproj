@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6A68FFB1C4116A600952A7F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A68FFA1C4116A600952A7F /* libssl.a */; };
+		D6A690241C41251A00952A7F /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFC1C41251A00952A7F /* alloc.c */; };
+		D6A690251C41251A00952A7F /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFD1C41251A00952A7F /* base64-decode.c */; };
+		D6A690261C41251A00952A7F /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFE1C41251A00952A7F /* client-handshake.c */; };
+		D6A690271C41251A00952A7F /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFF1C41251A00952A7F /* client-parser.c */; };
+		D6A690281C41251A00952A7F /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690001C41251A00952A7F /* client.c */; };
+		D6A690291C41251A00952A7F /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690011C41251A00952A7F /* context.c */; };
+		D6A6902B1C41251A00952A7F /* extension-deflate-frame.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690031C41251A00952A7F /* extension-deflate-frame.c */; };
+		D6A6902C1C41251A00952A7F /* extension-deflate-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690051C41251A00952A7F /* extension-deflate-stream.c */; };
+		D6A6902D1C41251A00952A7F /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690071C41251A00952A7F /* extension.c */; };
+		D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690081C41251A00952A7F /* getifaddrs.c */; };
+		D6A6902F1C41251A00952A7F /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900A1C41251A00952A7F /* handshake.c */; };
+		D6A690301C41251A00952A7F /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900B1C41251A00952A7F /* header.c */; };
+		D6A690311C41251A00952A7F /* hpack.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900C1C41251A00952A7F /* hpack.c */; };
+		D6A690321C41251A00952A7F /* http2.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900D1C41251A00952A7F /* http2.c */; };
+		D6A690341C41251A00952A7F /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690121C41251A00952A7F /* libwebsockets.c */; };
+		D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690161C41251A00952A7F /* lws-plat-unix.c */; };
+		D6A690391C41251A00952A7F /* minihuf.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690181C41251A00952A7F /* minihuf.c */; };
+		D6A6903A1C41251A00952A7F /* minilex.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690191C41251A00952A7F /* minilex.c */; };
+		D6A6903B1C41251A00952A7F /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901A1C41251A00952A7F /* output.c */; };
+		D6A6903C1C41251A00952A7F /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901B1C41251A00952A7F /* parsers.c */; };
+		D6A6903D1C41251A00952A7F /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901C1C41251A00952A7F /* pollfd.c */; };
+		D6A6903E1C41251A00952A7F /* server-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901E1C41251A00952A7F /* server-handshake.c */; };
+		D6A6903F1C41251A00952A7F /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901F1C41251A00952A7F /* server.c */; };
+		D6A690401C41251A00952A7F /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690201C41251A00952A7F /* service.c */; };
+		D6A690411C41251A00952A7F /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690211C41251A00952A7F /* sha-1.c */; };
+		D6A690421C41251A00952A7F /* ssl-http2.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690221C41251A00952A7F /* ssl-http2.c */; };
+		D6A690431C41251A00952A7F /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690231C41251A00952A7F /* ssl.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6A68F601C41156000952A7F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D6A68F621C41156000952A7F /* libwebsockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebsockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A68FF71C41162300952A7F /* lws_config_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config_private.h; sourceTree = "<group>"; };
+		D6A68FF81C41162300952A7F /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config.h; sourceTree = "<group>"; };
+		D6A68FFA1C4116A600952A7F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "OpenSSL-for-iPhone/lib/libssl.a"; sourceTree = "<group>"; };
+		D6A68FFC1C41251A00952A7F /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		D6A68FFD1C41251A00952A7F /* base64-decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "base64-decode.c"; sourceTree = "<group>"; };
+		D6A68FFE1C41251A00952A7F /* client-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-handshake.c"; sourceTree = "<group>"; };
+		D6A68FFF1C41251A00952A7F /* client-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-parser.c"; sourceTree = "<group>"; };
+		D6A690001C41251A00952A7F /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		D6A690011C41251A00952A7F /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
+		D6A690031C41251A00952A7F /* extension-deflate-frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-deflate-frame.c"; sourceTree = "<group>"; };
+		D6A690041C41251A00952A7F /* extension-deflate-frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-deflate-frame.h"; sourceTree = "<group>"; };
+		D6A690051C41251A00952A7F /* extension-deflate-stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-deflate-stream.c"; sourceTree = "<group>"; };
+		D6A690061C41251A00952A7F /* extension-deflate-stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-deflate-stream.h"; sourceTree = "<group>"; };
+		D6A690071C41251A00952A7F /* extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extension.c; sourceTree = "<group>"; };
+		D6A690081C41251A00952A7F /* getifaddrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getifaddrs.c; sourceTree = "<group>"; };
+		D6A690091C41251A00952A7F /* getifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getifaddrs.h; sourceTree = "<group>"; };
+		D6A6900A1C41251A00952A7F /* handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = handshake.c; sourceTree = "<group>"; };
+		D6A6900B1C41251A00952A7F /* header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = header.c; sourceTree = "<group>"; };
+		D6A6900C1C41251A00952A7F /* hpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpack.c; sourceTree = "<group>"; };
+		D6A6900D1C41251A00952A7F /* http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http2.c; sourceTree = "<group>"; };
+		D6A6900E1C41251A00952A7F /* huftable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huftable.h; sourceTree = "<group>"; };
+		D6A6900F1C41251A00952A7F /* lextable-strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "lextable-strings.h"; sourceTree = "<group>"; };
+		D6A690101C41251A00952A7F /* lextable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lextable.h; sourceTree = "<group>"; };
+		D6A690121C41251A00952A7F /* libwebsockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libwebsockets.c; sourceTree = "<group>"; };
+		D6A690131C41251A00952A7F /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
+		D6A690161C41251A00952A7F /* lws-plat-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lws-plat-unix.c"; sourceTree = "<group>"; };
+		D6A690181C41251A00952A7F /* minihuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minihuf.c; sourceTree = "<group>"; };
+		D6A690191C41251A00952A7F /* minilex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minilex.c; sourceTree = "<group>"; };
+		D6A6901A1C41251A00952A7F /* output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = output.c; sourceTree = "<group>"; };
+		D6A6901B1C41251A00952A7F /* parsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsers.c; sourceTree = "<group>"; };
+		D6A6901C1C41251A00952A7F /* pollfd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pollfd.c; sourceTree = "<group>"; };
+		D6A6901D1C41251A00952A7F /* private-libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "private-libwebsockets.h"; sourceTree = "<group>"; };
+		D6A6901E1C41251A00952A7F /* server-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "server-handshake.c"; sourceTree = "<group>"; };
+		D6A6901F1C41251A00952A7F /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		D6A690201C41251A00952A7F /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
+		D6A690211C41251A00952A7F /* sha-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha-1.c"; sourceTree = "<group>"; };
+		D6A690221C41251A00952A7F /* ssl-http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ssl-http2.c"; sourceTree = "<group>"; };
+		D6A690231C41251A00952A7F /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6A68F5F1C41156000952A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A68FFB1C4116A600952A7F /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6A68F591C41156000952A7F = {
+			isa = PBXGroup;
+			children = (
+				D6A68FF91C41169700952A7F /* openssl */,
+				D6A68FF81C41162300952A7F /* lws_config.h */,
+				D6A68FF71C41162300952A7F /* lws_config_private.h */,
+				D6A68F6E1C41157300952A7F /* src */,
+				D6A68F631C41156000952A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6A68F631C41156000952A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6A68F621C41156000952A7F /* libwebsockets.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6A68F6E1C41157300952A7F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D6A68FFC1C41251A00952A7F /* alloc.c */,
+				D6A68FFD1C41251A00952A7F /* base64-decode.c */,
+				D6A68FFE1C41251A00952A7F /* client-handshake.c */,
+				D6A68FFF1C41251A00952A7F /* client-parser.c */,
+				D6A690001C41251A00952A7F /* client.c */,
+				D6A690011C41251A00952A7F /* context.c */,
+				D6A690031C41251A00952A7F /* extension-deflate-frame.c */,
+				D6A690041C41251A00952A7F /* extension-deflate-frame.h */,
+				D6A690051C41251A00952A7F /* extension-deflate-stream.c */,
+				D6A690061C41251A00952A7F /* extension-deflate-stream.h */,
+				D6A690071C41251A00952A7F /* extension.c */,
+				D6A690081C41251A00952A7F /* getifaddrs.c */,
+				D6A690091C41251A00952A7F /* getifaddrs.h */,
+				D6A6900A1C41251A00952A7F /* handshake.c */,
+				D6A6900B1C41251A00952A7F /* header.c */,
+				D6A6900C1C41251A00952A7F /* hpack.c */,
+				D6A6900D1C41251A00952A7F /* http2.c */,
+				D6A6900E1C41251A00952A7F /* huftable.h */,
+				D6A6900F1C41251A00952A7F /* lextable-strings.h */,
+				D6A690101C41251A00952A7F /* lextable.h */,
+				D6A690121C41251A00952A7F /* libwebsockets.c */,
+				D6A690131C41251A00952A7F /* libwebsockets.h */,
+				D6A690161C41251A00952A7F /* lws-plat-unix.c */,
+				D6A690181C41251A00952A7F /* minihuf.c */,
+				D6A690191C41251A00952A7F /* minilex.c */,
+				D6A6901A1C41251A00952A7F /* output.c */,
+				D6A6901B1C41251A00952A7F /* parsers.c */,
+				D6A6901C1C41251A00952A7F /* pollfd.c */,
+				D6A6901D1C41251A00952A7F /* private-libwebsockets.h */,
+				D6A6901E1C41251A00952A7F /* server-handshake.c */,
+				D6A6901F1C41251A00952A7F /* server.c */,
+				D6A690201C41251A00952A7F /* service.c */,
+				D6A690211C41251A00952A7F /* sha-1.c */,
+				D6A690221C41251A00952A7F /* ssl-http2.c */,
+				D6A690231C41251A00952A7F /* ssl.c */,
+			);
+			name = src;
+			path = libwebsockets/lib;
+			sourceTree = "<group>";
+		};
+		D6A68FF91C41169700952A7F /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				D6A68FFA1C4116A600952A7F /* libssl.a */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6A68F611C41156000952A7F /* websockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A68F6B1C41156000952A7F /* Build configuration list for PBXNativeTarget "websockets" */;
+			buildPhases = (
+				D6A68F5E1C41156000952A7F /* Sources */,
+				D6A68F5F1C41156000952A7F /* Frameworks */,
+				D6A68F601C41156000952A7F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = websockets;
+			productName = websockets;
+			productReference = D6A68F621C41156000952A7F /* libwebsockets.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6A68F5A1C41156000952A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = omochimetaru;
+				TargetAttributes = {
+					D6A68F611C41156000952A7F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = D6A68F5D1C41156000952A7F /* Build configuration list for PBXProject "websockets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6A68F591C41156000952A7F;
+			productRefGroup = D6A68F631C41156000952A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6A68F611C41156000952A7F /* websockets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6A68F5E1C41156000952A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A690421C41251A00952A7F /* ssl-http2.c in Sources */,
+				D6A6903D1C41251A00952A7F /* pollfd.c in Sources */,
+				D6A690391C41251A00952A7F /* minihuf.c in Sources */,
+				D6A690401C41251A00952A7F /* service.c in Sources */,
+				D6A690251C41251A00952A7F /* base64-decode.c in Sources */,
+				D6A6902D1C41251A00952A7F /* extension.c in Sources */,
+				D6A6902B1C41251A00952A7F /* extension-deflate-frame.c in Sources */,
+				D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */,
+				D6A690431C41251A00952A7F /* ssl.c in Sources */,
+				D6A6902C1C41251A00952A7F /* extension-deflate-stream.c in Sources */,
+				D6A690311C41251A00952A7F /* hpack.c in Sources */,
+				D6A6903F1C41251A00952A7F /* server.c in Sources */,
+				D6A690341C41251A00952A7F /* libwebsockets.c in Sources */,
+				D6A690271C41251A00952A7F /* client-parser.c in Sources */,
+				D6A690261C41251A00952A7F /* client-handshake.c in Sources */,
+				D6A6902F1C41251A00952A7F /* handshake.c in Sources */,
+				D6A690321C41251A00952A7F /* http2.c in Sources */,
+				D6A690291C41251A00952A7F /* context.c in Sources */,
+				D6A690411C41251A00952A7F /* sha-1.c in Sources */,
+				D6A6903A1C41251A00952A7F /* minilex.c in Sources */,
+				D6A6903B1C41251A00952A7F /* output.c in Sources */,
+				D6A6903C1C41251A00952A7F /* parsers.c in Sources */,
+				D6A6903E1C41251A00952A7F /* server-handshake.c in Sources */,
+				D6A690281C41251A00952A7F /* client.c in Sources */,
+				D6A690301C41251A00952A7F /* header.c in Sources */,
+				D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */,
+				D6A690241C41251A00952A7F /* alloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6A68F691C41156000952A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6A68F6A1C41156000952A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6A68F6C1C41156000952A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenSSL-for-iPhone/include";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/OpenSSL-for-iPhone/lib";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D6A68F6D1C41156000952A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenSSL-for-iPhone/include";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/OpenSSL-for-iPhone/lib";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6A68F5D1C41156000952A7F /* Build configuration list for PBXProject "websockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A68F691C41156000952A7F /* Debug */,
+				D6A68F6A1C41156000952A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A68F6B1C41156000952A7F /* Build configuration list for PBXNativeTarget "websockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A68F6C1C41156000952A7F /* Debug */,
+				D6A68F6D1C41156000952A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6A68F5A1C41156000952A7F /* Project object */;
+}
