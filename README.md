@@ -1,4 +1,4 @@
-# libwebsockets-ios-build
+# libwebsockets-ios-build [![Build Status](https://travis-ci.org/omochi/libwebsockets-ios-build.svg?branch=master)](https://travis-ci.org/omochi/libwebsockets-ios-build)
 
 # Usage
 
