@@ -153,6 +153,7 @@ class App
 					FileUtils.copy(file, dest_file)
 				end
 			end
+			FileUtils.copy(script_dir + "lws_config.h", include_dir)
 		end
 	end
 	def build_target

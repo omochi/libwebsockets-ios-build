@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66436D01C4E19790059A94B /* extension-permessage-deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */; };
 		D6A68FFB1C4116A600952A7F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A68FFA1C4116A600952A7F /* libssl.a */; };
 		D6A690241C41251A00952A7F /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFC1C41251A00952A7F /* alloc.c */; };
 		D6A690251C41251A00952A7F /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFD1C41251A00952A7F /* base64-decode.c */; };
@@ -14,8 +15,6 @@
 		D6A690271C41251A00952A7F /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFF1C41251A00952A7F /* client-parser.c */; };
 		D6A690281C41251A00952A7F /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690001C41251A00952A7F /* client.c */; };
 		D6A690291C41251A00952A7F /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690011C41251A00952A7F /* context.c */; };
-		D6A6902B1C41251A00952A7F /* extension-deflate-frame.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690031C41251A00952A7F /* extension-deflate-frame.c */; };
-		D6A6902C1C41251A00952A7F /* extension-deflate-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690051C41251A00952A7F /* extension-deflate-stream.c */; };
 		D6A6902D1C41251A00952A7F /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690071C41251A00952A7F /* extension.c */; };
 		D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690081C41251A00952A7F /* getifaddrs.c */; };
 		D6A6902F1C41251A00952A7F /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900A1C41251A00952A7F /* handshake.c */; };
@@ -24,8 +23,6 @@
 		D6A690321C41251A00952A7F /* http2.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900D1C41251A00952A7F /* http2.c */; };
 		D6A690341C41251A00952A7F /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690121C41251A00952A7F /* libwebsockets.c */; };
 		D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690161C41251A00952A7F /* lws-plat-unix.c */; };
-		D6A690391C41251A00952A7F /* minihuf.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690181C41251A00952A7F /* minihuf.c */; };
-		D6A6903A1C41251A00952A7F /* minilex.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690191C41251A00952A7F /* minilex.c */; };
 		D6A6903B1C41251A00952A7F /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901A1C41251A00952A7F /* output.c */; };
 		D6A6903C1C41251A00952A7F /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901B1C41251A00952A7F /* parsers.c */; };
 		D6A6903D1C41251A00952A7F /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901C1C41251A00952A7F /* pollfd.c */; };
@@ -50,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-permessage-deflate.c"; sourceTree = "<group>"; };
+		D66436CF1C4E19790059A94B /* extension-permessage-deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-permessage-deflate.h"; sourceTree = "<group>"; };
 		D6A68F621C41156000952A7F /* libwebsockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebsockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A68FF71C41162300952A7F /* lws_config_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config_private.h; sourceTree = "<group>"; };
 		D6A68FF81C41162300952A7F /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config.h; sourceTree = "<group>"; };
@@ -60,10 +59,6 @@
 		D6A68FFF1C41251A00952A7F /* client-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-parser.c"; sourceTree = "<group>"; };
 		D6A690001C41251A00952A7F /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
 		D6A690011C41251A00952A7F /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
-		D6A690031C41251A00952A7F /* extension-deflate-frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-deflate-frame.c"; sourceTree = "<group>"; };
-		D6A690041C41251A00952A7F /* extension-deflate-frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-deflate-frame.h"; sourceTree = "<group>"; };
-		D6A690051C41251A00952A7F /* extension-deflate-stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-deflate-stream.c"; sourceTree = "<group>"; };
-		D6A690061C41251A00952A7F /* extension-deflate-stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-deflate-stream.h"; sourceTree = "<group>"; };
 		D6A690071C41251A00952A7F /* extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extension.c; sourceTree = "<group>"; };
 		D6A690081C41251A00952A7F /* getifaddrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getifaddrs.c; sourceTree = "<group>"; };
 		D6A690091C41251A00952A7F /* getifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getifaddrs.h; sourceTree = "<group>"; };
@@ -77,8 +72,6 @@
 		D6A690121C41251A00952A7F /* libwebsockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libwebsockets.c; sourceTree = "<group>"; };
 		D6A690131C41251A00952A7F /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
 		D6A690161C41251A00952A7F /* lws-plat-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lws-plat-unix.c"; sourceTree = "<group>"; };
-		D6A690181C41251A00952A7F /* minihuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minihuf.c; sourceTree = "<group>"; };
-		D6A690191C41251A00952A7F /* minilex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minilex.c; sourceTree = "<group>"; };
 		D6A6901A1C41251A00952A7F /* output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = output.c; sourceTree = "<group>"; };
 		D6A6901B1C41251A00952A7F /* parsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsers.c; sourceTree = "<group>"; };
 		D6A6901C1C41251A00952A7F /* pollfd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pollfd.c; sourceTree = "<group>"; };
@@ -131,11 +124,9 @@
 				D6A68FFF1C41251A00952A7F /* client-parser.c */,
 				D6A690001C41251A00952A7F /* client.c */,
 				D6A690011C41251A00952A7F /* context.c */,
-				D6A690031C41251A00952A7F /* extension-deflate-frame.c */,
-				D6A690041C41251A00952A7F /* extension-deflate-frame.h */,
-				D6A690051C41251A00952A7F /* extension-deflate-stream.c */,
-				D6A690061C41251A00952A7F /* extension-deflate-stream.h */,
 				D6A690071C41251A00952A7F /* extension.c */,
+				D66436CF1C4E19790059A94B /* extension-permessage-deflate.h */,
+				D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */,
 				D6A690081C41251A00952A7F /* getifaddrs.c */,
 				D6A690091C41251A00952A7F /* getifaddrs.h */,
 				D6A6900A1C41251A00952A7F /* handshake.c */,
@@ -148,8 +139,6 @@
 				D6A690121C41251A00952A7F /* libwebsockets.c */,
 				D6A690131C41251A00952A7F /* libwebsockets.h */,
 				D6A690161C41251A00952A7F /* lws-plat-unix.c */,
-				D6A690181C41251A00952A7F /* minihuf.c */,
-				D6A690191C41251A00952A7F /* minilex.c */,
 				D6A6901A1C41251A00952A7F /* output.c */,
 				D6A6901B1C41251A00952A7F /* parsers.c */,
 				D6A6901C1C41251A00952A7F /* pollfd.c */,
@@ -231,14 +220,11 @@
 			files = (
 				D6A690421C41251A00952A7F /* ssl-http2.c in Sources */,
 				D6A6903D1C41251A00952A7F /* pollfd.c in Sources */,
-				D6A690391C41251A00952A7F /* minihuf.c in Sources */,
 				D6A690401C41251A00952A7F /* service.c in Sources */,
 				D6A690251C41251A00952A7F /* base64-decode.c in Sources */,
 				D6A6902D1C41251A00952A7F /* extension.c in Sources */,
-				D6A6902B1C41251A00952A7F /* extension-deflate-frame.c in Sources */,
 				D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */,
 				D6A690431C41251A00952A7F /* ssl.c in Sources */,
-				D6A6902C1C41251A00952A7F /* extension-deflate-stream.c in Sources */,
 				D6A690311C41251A00952A7F /* hpack.c in Sources */,
 				D6A6903F1C41251A00952A7F /* server.c in Sources */,
 				D6A690341C41251A00952A7F /* libwebsockets.c in Sources */,
@@ -248,7 +234,6 @@
 				D6A690321C41251A00952A7F /* http2.c in Sources */,
 				D6A690291C41251A00952A7F /* context.c in Sources */,
 				D6A690411C41251A00952A7F /* sha-1.c in Sources */,
-				D6A6903A1C41251A00952A7F /* minilex.c in Sources */,
 				D6A6903B1C41251A00952A7F /* output.c in Sources */,
 				D6A6903C1C41251A00952A7F /* parsers.c in Sources */,
 				D6A6903E1C41251A00952A7F /* server-handshake.c in Sources */,
@@ -256,6 +241,7 @@
 				D6A690301C41251A00952A7F /* header.c in Sources */,
 				D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */,
 				D6A690241C41251A00952A7F /* alloc.c in Sources */,
+				D66436D01C4E19790059A94B /* extension-permessage-deflate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
