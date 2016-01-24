@@ -175,8 +175,15 @@ class App
 		puts  "run xcodebuild (#{platform}, #{arch}, #{configuration})"
 		puts  "  log file: #{log_file.to_s}"
 		print "  waiting"
-		pid = exec_bg(cmd)
-		wait_with_dot(Process.detach(pid))
+		begin
+			pid = exec_bg(cmd)
+			wait_with_dot(Process.detach(pid))
+		rescue => e
+			puts "[log dump begin]================"
+			exec(["cat", log_file.to_s].shelljoin)
+			puts "[log dump end]=================="
+			raise e
+		end
 	end
 	def make_fat_lib(thin_libs, fat_lib)
 		puts "make fat lib: #{fat_lib.basename.to_s}"
