@@ -68,4 +68,6 @@
 /* use SHA1() not internal libwebsockets_SHA1 */
 /* #undef LWS_SHA1_USE_OPENSSL_NAME */
 
+#define LWS_MAX_SMP 32
+
 
