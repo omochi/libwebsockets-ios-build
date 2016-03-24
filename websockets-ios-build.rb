@@ -169,7 +169,9 @@ class App
 			"-configuration", configuration,
 			"-arch", xcode_arch,
 			"-sdk", xcode_sdk_path,
-			"SYMROOT=#{dir.to_s}"
+			"SYMROOT=#{dir.to_s}",
+			"OTHER_CFLAGS=\"-fembed-bitcode\"",
+			"build"
 			].shelljoin
 		cmd = "#{cmd} >> #{log_file.to_s} 2>&1"
 		puts  "run xcodebuild (#{platform}, #{arch}, #{configuration})"
