@@ -26,7 +26,7 @@
 #define LWS_HAVE_GETENV
 
 /* Define to 1 if you have the <in6addr.h> header file. */
-#define LWS_HAVE_IN6ADDR_H
+/* #undef LWS_HAVE_IN6ADDR_H */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define LWS_HAVE_INTTYPES_H
@@ -75,6 +75,9 @@
 /* Define to 1 if you have the <sys/socket.h> header file. */
 #define LWS_HAVE_SYS_SOCKET_H
 
+/* Define to 1 if you have the <sys/sockio.h> header file. */
+#define LWS_HAVE_SYS_SOCKIO_H
+
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define LWS_HAVE_SYS_STAT_H
 
@@ -96,8 +99,13 @@
 /* Define to 1 if `vfork' works. */
 #define LWS_HAVE_WORKING_VFORK
 
+/* Define to 1 if execvpe() exists */
+/* #undef LWS_HAVE_EXECVPE */
+
 /* Define to 1 if you have the <zlib.h> header file. */
 #define LWS_HAVE_ZLIB_H
+
+#define LWS_HAVE_GETLOADAVG
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */

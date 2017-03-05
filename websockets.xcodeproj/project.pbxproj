@@ -7,31 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D66436D01C4E19790059A94B /* extension-permessage-deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */; };
 		D6A68FFB1C4116A600952A7F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A68FFA1C4116A600952A7F /* libssl.a */; };
-		D6A690241C41251A00952A7F /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFC1C41251A00952A7F /* alloc.c */; };
-		D6A690251C41251A00952A7F /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFD1C41251A00952A7F /* base64-decode.c */; };
-		D6A690261C41251A00952A7F /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFE1C41251A00952A7F /* client-handshake.c */; };
-		D6A690271C41251A00952A7F /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A68FFF1C41251A00952A7F /* client-parser.c */; };
-		D6A690281C41251A00952A7F /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690001C41251A00952A7F /* client.c */; };
-		D6A690291C41251A00952A7F /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690011C41251A00952A7F /* context.c */; };
-		D6A6902D1C41251A00952A7F /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690071C41251A00952A7F /* extension.c */; };
-		D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690081C41251A00952A7F /* getifaddrs.c */; };
-		D6A6902F1C41251A00952A7F /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900A1C41251A00952A7F /* handshake.c */; };
-		D6A690301C41251A00952A7F /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900B1C41251A00952A7F /* header.c */; };
-		D6A690311C41251A00952A7F /* hpack.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900C1C41251A00952A7F /* hpack.c */; };
-		D6A690321C41251A00952A7F /* http2.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6900D1C41251A00952A7F /* http2.c */; };
-		D6A690341C41251A00952A7F /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690121C41251A00952A7F /* libwebsockets.c */; };
-		D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690161C41251A00952A7F /* lws-plat-unix.c */; };
-		D6A6903B1C41251A00952A7F /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901A1C41251A00952A7F /* output.c */; };
-		D6A6903C1C41251A00952A7F /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901B1C41251A00952A7F /* parsers.c */; };
-		D6A6903D1C41251A00952A7F /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901C1C41251A00952A7F /* pollfd.c */; };
-		D6A6903E1C41251A00952A7F /* server-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901E1C41251A00952A7F /* server-handshake.c */; };
-		D6A6903F1C41251A00952A7F /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A6901F1C41251A00952A7F /* server.c */; };
-		D6A690401C41251A00952A7F /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690201C41251A00952A7F /* service.c */; };
-		D6A690411C41251A00952A7F /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690211C41251A00952A7F /* sha-1.c */; };
-		D6A690421C41251A00952A7F /* ssl-http2.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690221C41251A00952A7F /* ssl-http2.c */; };
-		D6A690431C41251A00952A7F /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A690231C41251A00952A7F /* ssl.c */; };
+		D6D74F121E6BAEAF00E57BBB /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EE51E6BAEAF00E57BBB /* alloc.c */; };
+		D6D74F131E6BAEAF00E57BBB /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EE61E6BAEAF00E57BBB /* base64-decode.c */; };
+		D6D74F141E6BAEAF00E57BBB /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EE71E6BAEAF00E57BBB /* client-handshake.c */; };
+		D6D74F151E6BAEAF00E57BBB /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EE81E6BAEAF00E57BBB /* client-parser.c */; };
+		D6D74F161E6BAEAF00E57BBB /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EE91E6BAEAF00E57BBB /* client.c */; };
+		D6D74F171E6BAEAF00E57BBB /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EEA1E6BAEAF00E57BBB /* context.c */; };
+		D6D74F191E6BAEAF00E57BBB /* extension-permessage-deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EEC1E6BAEAF00E57BBB /* extension-permessage-deflate.c */; };
+		D6D74F1A1E6BAEAF00E57BBB /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EEE1E6BAEAF00E57BBB /* extension.c */; };
+		D6D74F1B1E6BAEAF00E57BBB /* getifaddrs.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EEF1E6BAEAF00E57BBB /* getifaddrs.c */; };
+		D6D74F1C1E6BAEAF00E57BBB /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EF11E6BAEAF00E57BBB /* handshake.c */; };
+		D6D74F1D1E6BAEAF00E57BBB /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EF21E6BAEAF00E57BBB /* header.c */; };
+		D6D74F201E6BAEAF00E57BBB /* junzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EF61E6BAEAF00E57BBB /* junzip.c */; };
+		D6D74F211E6BAEAF00E57BBB /* lejp-conf.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EF71E6BAEAF00E57BBB /* lejp-conf.c */; };
+		D6D74F221E6BAEAF00E57BBB /* lejp.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EF81E6BAEAF00E57BBB /* lejp.c */; };
+		D6D74F251E6BAEAF00E57BBB /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74EFE1E6BAEAF00E57BBB /* libwebsockets.c */; };
+		D6D74F261E6BAEAF00E57BBB /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F001E6BAEAF00E57BBB /* lws-plat-unix.c */; };
+		D6D74F271E6BAEAF00E57BBB /* minihuf.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F011E6BAEAF00E57BBB /* minihuf.c */; };
+		D6D74F281E6BAEAF00E57BBB /* minilex.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F021E6BAEAF00E57BBB /* minilex.c */; };
+		D6D74F291E6BAEAF00E57BBB /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F031E6BAEAF00E57BBB /* output.c */; };
+		D6D74F2A1E6BAEAF00E57BBB /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F041E6BAEAF00E57BBB /* parsers.c */; };
+		D6D74F2B1E6BAEAF00E57BBB /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F051E6BAEAF00E57BBB /* pollfd.c */; };
+		D6D74F2C1E6BAEAF00E57BBB /* ranges.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F071E6BAEAF00E57BBB /* ranges.c */; };
+		D6D74F2E1E6BAEAF00E57BBB /* server-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F091E6BAEAF00E57BBB /* server-handshake.c */; };
+		D6D74F2F1E6BAEAF00E57BBB /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F0A1E6BAEAF00E57BBB /* server.c */; };
+		D6D74F301E6BAEAF00E57BBB /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F0B1E6BAEAF00E57BBB /* service.c */; };
+		D6D74F311E6BAEAF00E57BBB /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F0C1E6BAEAF00E57BBB /* sha-1.c */; };
+		D6D74F331E6BAEAF00E57BBB /* ssl-client.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F0E1E6BAEAF00E57BBB /* ssl-client.c */; };
+		D6D74F351E6BAEAF00E57BBB /* ssl-server.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F101E6BAEAF00E57BBB /* ssl-server.c */; };
+		D6D74F361E6BAEAF00E57BBB /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D74F111E6BAEAF00E57BBB /* ssl.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,41 +52,47 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-permessage-deflate.c"; sourceTree = "<group>"; };
-		D66436CF1C4E19790059A94B /* extension-permessage-deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-permessage-deflate.h"; sourceTree = "<group>"; };
 		D6A68F621C41156000952A7F /* libwebsockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebsockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A68FF71C41162300952A7F /* lws_config_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config_private.h; sourceTree = "<group>"; };
 		D6A68FF81C41162300952A7F /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lws_config.h; sourceTree = "<group>"; };
 		D6A68FFA1C4116A600952A7F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "OpenSSL-for-iPhone/lib/libssl.a"; sourceTree = "<group>"; };
-		D6A68FFC1C41251A00952A7F /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
-		D6A68FFD1C41251A00952A7F /* base64-decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "base64-decode.c"; sourceTree = "<group>"; };
-		D6A68FFE1C41251A00952A7F /* client-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-handshake.c"; sourceTree = "<group>"; };
-		D6A68FFF1C41251A00952A7F /* client-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-parser.c"; sourceTree = "<group>"; };
-		D6A690001C41251A00952A7F /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
-		D6A690011C41251A00952A7F /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
-		D6A690071C41251A00952A7F /* extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extension.c; sourceTree = "<group>"; };
-		D6A690081C41251A00952A7F /* getifaddrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getifaddrs.c; sourceTree = "<group>"; };
-		D6A690091C41251A00952A7F /* getifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getifaddrs.h; sourceTree = "<group>"; };
-		D6A6900A1C41251A00952A7F /* handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = handshake.c; sourceTree = "<group>"; };
-		D6A6900B1C41251A00952A7F /* header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = header.c; sourceTree = "<group>"; };
-		D6A6900C1C41251A00952A7F /* hpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpack.c; sourceTree = "<group>"; };
-		D6A6900D1C41251A00952A7F /* http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http2.c; sourceTree = "<group>"; };
-		D6A6900E1C41251A00952A7F /* huftable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huftable.h; sourceTree = "<group>"; };
-		D6A6900F1C41251A00952A7F /* lextable-strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "lextable-strings.h"; sourceTree = "<group>"; };
-		D6A690101C41251A00952A7F /* lextable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lextable.h; sourceTree = "<group>"; };
-		D6A690121C41251A00952A7F /* libwebsockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libwebsockets.c; sourceTree = "<group>"; };
-		D6A690131C41251A00952A7F /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
-		D6A690161C41251A00952A7F /* lws-plat-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lws-plat-unix.c"; sourceTree = "<group>"; };
-		D6A6901A1C41251A00952A7F /* output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = output.c; sourceTree = "<group>"; };
-		D6A6901B1C41251A00952A7F /* parsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsers.c; sourceTree = "<group>"; };
-		D6A6901C1C41251A00952A7F /* pollfd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pollfd.c; sourceTree = "<group>"; };
-		D6A6901D1C41251A00952A7F /* private-libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "private-libwebsockets.h"; sourceTree = "<group>"; };
-		D6A6901E1C41251A00952A7F /* server-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "server-handshake.c"; sourceTree = "<group>"; };
-		D6A6901F1C41251A00952A7F /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
-		D6A690201C41251A00952A7F /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
-		D6A690211C41251A00952A7F /* sha-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha-1.c"; sourceTree = "<group>"; };
-		D6A690221C41251A00952A7F /* ssl-http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ssl-http2.c"; sourceTree = "<group>"; };
-		D6A690231C41251A00952A7F /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl.c; sourceTree = "<group>"; };
+		D6D74EE51E6BAEAF00E57BBB /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		D6D74EE61E6BAEAF00E57BBB /* base64-decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "base64-decode.c"; sourceTree = "<group>"; };
+		D6D74EE71E6BAEAF00E57BBB /* client-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-handshake.c"; sourceTree = "<group>"; };
+		D6D74EE81E6BAEAF00E57BBB /* client-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-parser.c"; sourceTree = "<group>"; };
+		D6D74EE91E6BAEAF00E57BBB /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		D6D74EEA1E6BAEAF00E57BBB /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
+		D6D74EEC1E6BAEAF00E57BBB /* extension-permessage-deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "extension-permessage-deflate.c"; sourceTree = "<group>"; };
+		D6D74EED1E6BAEAF00E57BBB /* extension-permessage-deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extension-permessage-deflate.h"; sourceTree = "<group>"; };
+		D6D74EEE1E6BAEAF00E57BBB /* extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extension.c; sourceTree = "<group>"; };
+		D6D74EEF1E6BAEAF00E57BBB /* getifaddrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getifaddrs.c; sourceTree = "<group>"; };
+		D6D74EF01E6BAEAF00E57BBB /* getifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getifaddrs.h; sourceTree = "<group>"; };
+		D6D74EF11E6BAEAF00E57BBB /* handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = handshake.c; sourceTree = "<group>"; };
+		D6D74EF21E6BAEAF00E57BBB /* header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = header.c; sourceTree = "<group>"; };
+		D6D74EF51E6BAEAF00E57BBB /* huftable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huftable.h; sourceTree = "<group>"; };
+		D6D74EF61E6BAEAF00E57BBB /* junzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = junzip.c; sourceTree = "<group>"; };
+		D6D74EF71E6BAEAF00E57BBB /* lejp-conf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lejp-conf.c"; sourceTree = "<group>"; };
+		D6D74EF81E6BAEAF00E57BBB /* lejp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lejp.c; sourceTree = "<group>"; };
+		D6D74EF91E6BAEAF00E57BBB /* lejp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lejp.h; sourceTree = "<group>"; };
+		D6D74EFA1E6BAEAF00E57BBB /* lextable-strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "lextable-strings.h"; sourceTree = "<group>"; };
+		D6D74EFB1E6BAEAF00E57BBB /* lextable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lextable.h; sourceTree = "<group>"; };
+		D6D74EFE1E6BAEAF00E57BBB /* libwebsockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libwebsockets.c; sourceTree = "<group>"; };
+		D6D74EFF1E6BAEAF00E57BBB /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
+		D6D74F001E6BAEAF00E57BBB /* lws-plat-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lws-plat-unix.c"; sourceTree = "<group>"; };
+		D6D74F011E6BAEAF00E57BBB /* minihuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minihuf.c; sourceTree = "<group>"; };
+		D6D74F021E6BAEAF00E57BBB /* minilex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minilex.c; sourceTree = "<group>"; };
+		D6D74F031E6BAEAF00E57BBB /* output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = output.c; sourceTree = "<group>"; };
+		D6D74F041E6BAEAF00E57BBB /* parsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsers.c; sourceTree = "<group>"; };
+		D6D74F051E6BAEAF00E57BBB /* pollfd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pollfd.c; sourceTree = "<group>"; };
+		D6D74F061E6BAEAF00E57BBB /* private-libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "private-libwebsockets.h"; sourceTree = "<group>"; };
+		D6D74F071E6BAEAF00E57BBB /* ranges.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ranges.c; sourceTree = "<group>"; };
+		D6D74F091E6BAEAF00E57BBB /* server-handshake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "server-handshake.c"; sourceTree = "<group>"; };
+		D6D74F0A1E6BAEAF00E57BBB /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		D6D74F0B1E6BAEAF00E57BBB /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
+		D6D74F0C1E6BAEAF00E57BBB /* sha-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha-1.c"; sourceTree = "<group>"; };
+		D6D74F0E1E6BAEAF00E57BBB /* ssl-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ssl-client.c"; sourceTree = "<group>"; };
+		D6D74F101E6BAEAF00E57BBB /* ssl-server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ssl-server.c"; sourceTree = "<group>"; };
+		D6D74F111E6BAEAF00E57BBB /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,37 +129,43 @@
 		D6A68F6E1C41157300952A7F /* src */ = {
 			isa = PBXGroup;
 			children = (
-				D6A68FFC1C41251A00952A7F /* alloc.c */,
-				D6A68FFD1C41251A00952A7F /* base64-decode.c */,
-				D6A68FFE1C41251A00952A7F /* client-handshake.c */,
-				D6A68FFF1C41251A00952A7F /* client-parser.c */,
-				D6A690001C41251A00952A7F /* client.c */,
-				D6A690011C41251A00952A7F /* context.c */,
-				D6A690071C41251A00952A7F /* extension.c */,
-				D66436CF1C4E19790059A94B /* extension-permessage-deflate.h */,
-				D66436CE1C4E19790059A94B /* extension-permessage-deflate.c */,
-				D6A690081C41251A00952A7F /* getifaddrs.c */,
-				D6A690091C41251A00952A7F /* getifaddrs.h */,
-				D6A6900A1C41251A00952A7F /* handshake.c */,
-				D6A6900B1C41251A00952A7F /* header.c */,
-				D6A6900C1C41251A00952A7F /* hpack.c */,
-				D6A6900D1C41251A00952A7F /* http2.c */,
-				D6A6900E1C41251A00952A7F /* huftable.h */,
-				D6A6900F1C41251A00952A7F /* lextable-strings.h */,
-				D6A690101C41251A00952A7F /* lextable.h */,
-				D6A690121C41251A00952A7F /* libwebsockets.c */,
-				D6A690131C41251A00952A7F /* libwebsockets.h */,
-				D6A690161C41251A00952A7F /* lws-plat-unix.c */,
-				D6A6901A1C41251A00952A7F /* output.c */,
-				D6A6901B1C41251A00952A7F /* parsers.c */,
-				D6A6901C1C41251A00952A7F /* pollfd.c */,
-				D6A6901D1C41251A00952A7F /* private-libwebsockets.h */,
-				D6A6901E1C41251A00952A7F /* server-handshake.c */,
-				D6A6901F1C41251A00952A7F /* server.c */,
-				D6A690201C41251A00952A7F /* service.c */,
-				D6A690211C41251A00952A7F /* sha-1.c */,
-				D6A690221C41251A00952A7F /* ssl-http2.c */,
-				D6A690231C41251A00952A7F /* ssl.c */,
+				D6D74EE51E6BAEAF00E57BBB /* alloc.c */,
+				D6D74EE61E6BAEAF00E57BBB /* base64-decode.c */,
+				D6D74EE71E6BAEAF00E57BBB /* client-handshake.c */,
+				D6D74EE81E6BAEAF00E57BBB /* client-parser.c */,
+				D6D74EE91E6BAEAF00E57BBB /* client.c */,
+				D6D74EEA1E6BAEAF00E57BBB /* context.c */,
+				D6D74EEC1E6BAEAF00E57BBB /* extension-permessage-deflate.c */,
+				D6D74EED1E6BAEAF00E57BBB /* extension-permessage-deflate.h */,
+				D6D74EEE1E6BAEAF00E57BBB /* extension.c */,
+				D6D74EEF1E6BAEAF00E57BBB /* getifaddrs.c */,
+				D6D74EF01E6BAEAF00E57BBB /* getifaddrs.h */,
+				D6D74EF11E6BAEAF00E57BBB /* handshake.c */,
+				D6D74EF21E6BAEAF00E57BBB /* header.c */,
+				D6D74EF51E6BAEAF00E57BBB /* huftable.h */,
+				D6D74EF61E6BAEAF00E57BBB /* junzip.c */,
+				D6D74EF71E6BAEAF00E57BBB /* lejp-conf.c */,
+				D6D74EF81E6BAEAF00E57BBB /* lejp.c */,
+				D6D74EF91E6BAEAF00E57BBB /* lejp.h */,
+				D6D74EFA1E6BAEAF00E57BBB /* lextable-strings.h */,
+				D6D74EFB1E6BAEAF00E57BBB /* lextable.h */,
+				D6D74EFE1E6BAEAF00E57BBB /* libwebsockets.c */,
+				D6D74EFF1E6BAEAF00E57BBB /* libwebsockets.h */,
+				D6D74F001E6BAEAF00E57BBB /* lws-plat-unix.c */,
+				D6D74F011E6BAEAF00E57BBB /* minihuf.c */,
+				D6D74F021E6BAEAF00E57BBB /* minilex.c */,
+				D6D74F031E6BAEAF00E57BBB /* output.c */,
+				D6D74F041E6BAEAF00E57BBB /* parsers.c */,
+				D6D74F051E6BAEAF00E57BBB /* pollfd.c */,
+				D6D74F061E6BAEAF00E57BBB /* private-libwebsockets.h */,
+				D6D74F071E6BAEAF00E57BBB /* ranges.c */,
+				D6D74F091E6BAEAF00E57BBB /* server-handshake.c */,
+				D6D74F0A1E6BAEAF00E57BBB /* server.c */,
+				D6D74F0B1E6BAEAF00E57BBB /* service.c */,
+				D6D74F0C1E6BAEAF00E57BBB /* sha-1.c */,
+				D6D74F0E1E6BAEAF00E57BBB /* ssl-client.c */,
+				D6D74F101E6BAEAF00E57BBB /* ssl-server.c */,
+				D6D74F111E6BAEAF00E57BBB /* ssl.c */,
 			);
 			name = src;
 			path = libwebsockets/lib;
@@ -218,30 +235,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A690421C41251A00952A7F /* ssl-http2.c in Sources */,
-				D6A6903D1C41251A00952A7F /* pollfd.c in Sources */,
-				D6A690401C41251A00952A7F /* service.c in Sources */,
-				D6A690251C41251A00952A7F /* base64-decode.c in Sources */,
-				D6A6902D1C41251A00952A7F /* extension.c in Sources */,
-				D6A6902E1C41251A00952A7F /* getifaddrs.c in Sources */,
-				D6A690431C41251A00952A7F /* ssl.c in Sources */,
-				D6A690311C41251A00952A7F /* hpack.c in Sources */,
-				D6A6903F1C41251A00952A7F /* server.c in Sources */,
-				D6A690341C41251A00952A7F /* libwebsockets.c in Sources */,
-				D6A690271C41251A00952A7F /* client-parser.c in Sources */,
-				D6A690261C41251A00952A7F /* client-handshake.c in Sources */,
-				D6A6902F1C41251A00952A7F /* handshake.c in Sources */,
-				D6A690321C41251A00952A7F /* http2.c in Sources */,
-				D6A690291C41251A00952A7F /* context.c in Sources */,
-				D6A690411C41251A00952A7F /* sha-1.c in Sources */,
-				D6A6903B1C41251A00952A7F /* output.c in Sources */,
-				D6A6903C1C41251A00952A7F /* parsers.c in Sources */,
-				D6A6903E1C41251A00952A7F /* server-handshake.c in Sources */,
-				D6A690281C41251A00952A7F /* client.c in Sources */,
-				D6A690301C41251A00952A7F /* header.c in Sources */,
-				D6A690371C41251A00952A7F /* lws-plat-unix.c in Sources */,
-				D6A690241C41251A00952A7F /* alloc.c in Sources */,
-				D66436D01C4E19790059A94B /* extension-permessage-deflate.c in Sources */,
+				D6D74F2B1E6BAEAF00E57BBB /* pollfd.c in Sources */,
+				D6D74F271E6BAEAF00E57BBB /* minihuf.c in Sources */,
+				D6D74F331E6BAEAF00E57BBB /* ssl-client.c in Sources */,
+				D6D74F2C1E6BAEAF00E57BBB /* ranges.c in Sources */,
+				D6D74F221E6BAEAF00E57BBB /* lejp.c in Sources */,
+				D6D74F301E6BAEAF00E57BBB /* service.c in Sources */,
+				D6D74F351E6BAEAF00E57BBB /* ssl-server.c in Sources */,
+				D6D74F131E6BAEAF00E57BBB /* base64-decode.c in Sources */,
+				D6D74F201E6BAEAF00E57BBB /* junzip.c in Sources */,
+				D6D74F151E6BAEAF00E57BBB /* client-parser.c in Sources */,
+				D6D74F251E6BAEAF00E57BBB /* libwebsockets.c in Sources */,
+				D6D74F141E6BAEAF00E57BBB /* client-handshake.c in Sources */,
+				D6D74F171E6BAEAF00E57BBB /* context.c in Sources */,
+				D6D74F161E6BAEAF00E57BBB /* client.c in Sources */,
+				D6D74F121E6BAEAF00E57BBB /* alloc.c in Sources */,
+				D6D74F311E6BAEAF00E57BBB /* sha-1.c in Sources */,
+				D6D74F211E6BAEAF00E57BBB /* lejp-conf.c in Sources */,
+				D6D74F261E6BAEAF00E57BBB /* lws-plat-unix.c in Sources */,
+				D6D74F281E6BAEAF00E57BBB /* minilex.c in Sources */,
+				D6D74F291E6BAEAF00E57BBB /* output.c in Sources */,
+				D6D74F2A1E6BAEAF00E57BBB /* parsers.c in Sources */,
+				D6D74F2E1E6BAEAF00E57BBB /* server-handshake.c in Sources */,
+				D6D74F361E6BAEAF00E57BBB /* ssl.c in Sources */,
+				D6D74F1A1E6BAEAF00E57BBB /* extension.c in Sources */,
+				D6D74F1C1E6BAEAF00E57BBB /* handshake.c in Sources */,
+				D6D74F1B1E6BAEAF00E57BBB /* getifaddrs.c in Sources */,
+				D6D74F1D1E6BAEAF00E57BBB /* header.c in Sources */,
+				D6D74F2F1E6BAEAF00E57BBB /* server.c in Sources */,
+				D6D74F191E6BAEAF00E57BBB /* extension-permessage-deflate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
